@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: allenjedb.github.io
-masthead_title: /assets/images/Hysteresis.png
+masthead_title: "/assets/images/Hysteresis.png"
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -60,7 +60,7 @@ plugins:
 
 author:
   name   : "Allen Bertoldo"
-  avatar : "/assets/images/bc.png"
+  avatar : "/assets/images/bc.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Website"
