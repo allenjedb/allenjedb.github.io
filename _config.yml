@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Allen Bertoldo"
   avatar : "/assets/images/sombra.png"
-  bio    : "Network Engineer - Loves learning new things about anything Cyber!"
+  bio    : "Network Engineer - Learning about Cyber Security!"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
