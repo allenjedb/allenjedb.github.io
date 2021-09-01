@@ -16,7 +16,7 @@ tags:
 
 <!--more-->
 
-<p> test align<img src="/assets/images/sombra.png" align="left" alt="" /></h1>
+<p> test align<img src="/assets/images/sombra.png" align="left" alt="" /></p>
 
 <p>asdasdasdzxxxxxxxxxxxxxxxxxxxxxcccccccccccccccccccccccasfzx.</p>
 
