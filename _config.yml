@@ -60,8 +60,8 @@ plugins:
 author:
   name   : "Allen Bertoldo"
   avatar : "/assets/images/sombra.png"
-  bio    : "• Network Engineer"
-            "• Cyber Sec"
+  bio    : "Network Engineer"
+  bio    : "Cyber Sec"
   links:
     - label: "Auckland, NZ"
       icon: "far fa-compass"
