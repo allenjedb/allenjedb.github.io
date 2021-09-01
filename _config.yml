@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Cyber Security Enthusiast - Join me in learning all the things about CyberSec!
 #twitter_username: username
 github_username: allenjedb
-minimal_mistakes_skin: air
+minimal_mistakes_skin: plum
 search: true
 excerpt_separator: <!--more-->
 # Build settings
@@ -33,7 +33,7 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 breadcrumbs: true
-excerpt_separator: <!--more-->
+
 include:
   - _pages
 
