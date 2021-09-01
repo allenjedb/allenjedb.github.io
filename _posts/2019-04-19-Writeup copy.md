@@ -1,0 +1,13 @@
+---
+title: Writeup!
+date: 2021-08-30
+categories:
+  - Writeup
+tags:
+  - TryhackMe
+  - Writeup
+
+---
+<p><img src="/assets/images/sombra.png" alt="" /></p>
+
+<p>asdasdasdzxxxxxxxxxxxxxxxxxxxxxcccccccccccccccccccccccasfzx.</p>
