@@ -62,6 +62,8 @@ author:
   avatar : "/assets/images/sombra.png"
   bio    : "Network Engineer"
   text    : "Cyber Sec"
+  sidebar:
+    title: "Sample Title"
   links:
     - label: "Auckland, NZ"
       icon: "far fa-compass"
