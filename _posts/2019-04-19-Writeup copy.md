@@ -6,7 +6,8 @@ categories:
 tags:
   - TryhackMe
   - Writeup
-
+  
+<h2>WriteUp! <img src="/assets/images/sombra.png" alt style="right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;"/></h2>
 ---
 <p><img src="/assets/images/sombra.png" alt="" /></p>
 
