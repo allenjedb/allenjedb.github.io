@@ -61,7 +61,7 @@ author:
   name   : "Allen Bertoldo"
   avatar : "/assets/images/sombra.png"
   bio    : "Network Engineer"
-  bio    : "Cyber Sec"
+  text    : "Cyber Sec"
   links:
     - label: "Auckland, NZ"
       icon: "far fa-compass"
