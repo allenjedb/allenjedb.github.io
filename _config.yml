@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: allenjedb
 minimal_mistakes_skin: air
 search: true
-
+excerpt_separator: <!--more-->
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
