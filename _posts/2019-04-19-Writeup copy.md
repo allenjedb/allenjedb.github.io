@@ -1,5 +1,5 @@
 ---
-title: <h2>WriteUp! <img src="/assets/images/sombra.png" align="right" alt style="right;margin-right:50px; margin-left:20px; margin-bottom:10px; height:120px;"/></h2>
+title: Writeup!!!
 date: 2021-08-31
 categories:
   - Writeup
