@@ -8,7 +8,7 @@ tags:
   - Fixes
   
 ---
-<p><img src="/assets/images/dvwa.png" alt="" /></p>
+<p><img src="/assets/images/windowshello.png" alt="" /></p>
 
 <p>delete content of NGC folder.</p>
 
