@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Cyber Security Enthusiast - Join me in learning all the things about CyberSec!
 #twitter_username: username
 github_username: allenjedb
-minimal_mistakes_skin: dirt
+minimal_mistakes_skin: neon
 search: true
 # Build settings
 markdown: kramdown
@@ -68,9 +68,9 @@ author:
     #- label: "Website"
       #icon: "fas fa-fw fa-link"
       #url: "https://"
-    #- label: "Twitter"
-      #icon: "fab fa-fw fa-twitter-square"
-      #url: "https://twitter.com/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/allenjedb"
