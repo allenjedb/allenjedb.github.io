@@ -62,7 +62,7 @@ author:
   avatar : "/assets/images/sombra.png"
   bio    : "CCNA / SEC+"
   links:
-    - label: "Auckland, NZ"
+    - label: "NZ"
       icon: "far fa-compass"
       url: ""
     #- label: "Website"
