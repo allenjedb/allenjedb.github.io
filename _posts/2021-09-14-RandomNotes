@@ -1,0 +1,1 @@
+msfvenom -f <i>filetype</i> -p <i>payload</i> LHOST=<i>IP</i> LPORT=<i>PORT</i> -o <i>outfile</i>
