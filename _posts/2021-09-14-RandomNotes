@@ -1,1 +1,5 @@
-msfvenom -f <i>filetype</i> -p <i>payload</i> LHOST=<i>IP</i> LPORT=<i>PORT</i> -o <i>outfile</i>
+<h2>Payload</h2>
+<p>msfvenom -f <i>filetype</i> -p <i>payload</i> LHOST=<i>IP</i> LPORT=<i>PORT</i> -o <i>outfile</i></p>
+
+<h2>Find Setuid</h2>
+<p>find "$DIRECTORY" -perm /4000</p>
