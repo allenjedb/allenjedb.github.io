@@ -5,4 +5,8 @@
 <p>find "$DIRECTORY" -perm /4000</p>
 
 <h2>SQL creds?</h2>
-<p>python /usr/share/doc/python3-impacket/examples/mssqlclient.py -p 1433 fooadmin@172.16.64.199 -windows-auth</p>
+<p>python /usr/share/doc/python3-impacket/examples/mssqlclient.py -p 1433 USERNAME@IP -windows-auth</p>
+<p>admin/mssql/mssql_enum</p>
+
+<h2>data exfil</h2>
+<p>Packet Whisper</p>
