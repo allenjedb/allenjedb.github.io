@@ -12,7 +12,7 @@ toc_sticky: true
 ---
 
 <h2>Web Applications</h2>
-<pre>HTTP</pre>
+<<h3>>HTTP</h3>
 <ul>
   <li>HTTP works on top of TCP Protocol</li>
   <li>SYN-SYNACK-ACK(GET /html)-HTML Response-Close Connection</li>
