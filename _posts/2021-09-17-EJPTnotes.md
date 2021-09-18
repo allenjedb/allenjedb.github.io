@@ -10,8 +10,8 @@ excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
 ---
-<code>asazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzWS</code>
-<h2 id=web-applications>Web Applications</h2>
+
+<h2 id="web_applications">Web Applications</h2>
 <h3>HTTP</h3>
 <ul>
   <li>HTTP works on top of TCP Protocol</li>
@@ -23,6 +23,7 @@ toc_sticky: true
   <li>Cookie with http-only attreibute prevents Cookie stealing via XSS</li>
 </ul>
 <h3>HTTPS</h3>
+
 <ul>
 <li>nc doesnt do https - use openssl instead </li>
 <li></li>
