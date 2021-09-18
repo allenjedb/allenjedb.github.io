@@ -11,7 +11,7 @@ toc: true
 toc_sticky: true
 ---
 <code>asazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzWS</code>
-<h2>Web Applications</h2>
+<h2 id=web-applications>Web Applications</h2>
 <h3>HTTP</h3>
 <ul>
   <li>HTTP works on top of TCP Protocol</li>
