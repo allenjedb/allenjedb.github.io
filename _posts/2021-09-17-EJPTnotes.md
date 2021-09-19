@@ -12,7 +12,7 @@ toc_sticky: true
 ---
 
 <h2 id="web_applications">Web Applications</h2>
-<h3>HTTP</h3>
+<h4>HTTP</h4>
 <ul>
   <li>HTTP works on top of TCP Protocol</li>
   <li>SYN-SYNACK-ACK(GET /html)-HTML Response-Close Connection</li>
@@ -22,7 +22,7 @@ toc_sticky: true
   <li>Content-type - lets the client know hot to interpret the body of the msg.</li>
   <li>Cookie with http-only attreibute prevents Cookie stealing via XSS</li>
 </ul>
-<h3>HTTPS</h3>
+<h4>HTTPS</h4>
 
 <ul>
 <li>nc doesnt do https - use openssl instead </li>
