@@ -11,9 +11,8 @@ toc: true
 toc_sticky: true
 ---
 
-<h1>Web Application Methodology</h1>
+<h2>What to do vs a Web App</h2>
 
-<p>What to do vs a Web App</p>
 <ul>
     <li>Check robots.txt</li>
     <li>Gobuster dir and subdomain</li>
