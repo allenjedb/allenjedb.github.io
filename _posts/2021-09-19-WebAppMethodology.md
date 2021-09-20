@@ -11,7 +11,7 @@ toc: true
 toc_sticky: true
 ---
 
-<h2>What to do vs a Web App</h2>
+<h2 id="wtdvsawbapp">What to do vs a Web App</h2>
 
 <ul>
     <li>Check robots.txt</li>
