@@ -47,5 +47,4 @@ toc_sticky: true
     <li>only tcp scan will work</li>
     <li>udp, syn and ping scan wont work - use -Pn</li>
   </ul>
-  <li>Foxyproxy</li>
-</ul>
+<h4>Foxyproxy</h4>
