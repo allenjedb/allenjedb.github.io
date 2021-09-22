@@ -29,3 +29,6 @@ toc_sticky: true
 <li></li>
 
 </ul>
+
+<h2>Simple Ping sweep</h2>
+<code>for i in {1..255}; do (ping -c 1 192.168.1.${i} | grep "bytes from" &); done</code>
