@@ -48,3 +48,4 @@ toc_sticky: true
     <li>udp, syn and ping scan wont work - use -Pn</li>
   </ul>
 <h4>Foxyproxy</h4>
+<p>proxy for routing browser traffic</p>
