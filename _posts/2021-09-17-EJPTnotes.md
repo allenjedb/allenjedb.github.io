@@ -40,5 +40,13 @@ toc_sticky: true
 <h3>Proxy tools</h3>
 <ul>
   <li>Proxychains</li>
+  <p>example to proxy a netcat</p>
+  <code>proxychains nc 172.16.0.10 23</code>
+  <p>note:</p>
+  <ul>
+    <li>when using nmap w/ proxychains comment out proxy_dns inside the proxychains.conf file</li>
+    <li>only tcp scan will work</li>
+    <li>udp, syn and ping scan wont work - use -Pn</li>
+  </ul>
   <li>Foxyproxy</li>
 </ul>
