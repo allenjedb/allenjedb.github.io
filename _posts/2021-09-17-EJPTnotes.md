@@ -33,7 +33,7 @@ toc_sticky: true
 </ul>
 
 <h2 id="pivoting">Pivoting</h2>
-<h3>Bash Simple Ping sweep</h3>
+<h4>Bash Simple Ping sweep</h4>
 <code>for i in {1..255}; do (ping -c 1 192.168.1.${i} | grep "bytes from" &); done</code>
 <h3>Bash Simple portscan</h3>
 <code>for i in {1..65535}; do (echo > /dev/tcp/192.168.1.1/$i) >/dev/null 2>&1 && echo $i is open; done</code>
