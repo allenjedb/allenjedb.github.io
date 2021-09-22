@@ -12,7 +12,7 @@ toc_sticky: true
 ---
 
 <h2 id="web_applications">Web Applications</h2>
-<h4>HTTP</h4>
+<h3>HTTP</h3>
 <p>
 <ul>
   <li>HTTP works on top of TCP Protocol</li>
@@ -24,7 +24,7 @@ toc_sticky: true
   <li>Cookie with http-only attreibute prevents Cookie stealing via XSS</li>
 </ul>
 </p>
-<h4>HTTPS</h4>
+<h3>HTTPS</h3>
 
 <ul>
 <li>nc doesnt do https - use openssl instead </li>
@@ -33,16 +33,15 @@ toc_sticky: true
 </ul>
 
 <h2 id="pivoting">Pivoting</h2>
-<h4>Bash Simple Ping sweep</h4>
+<h3>Bash Simple Ping sweep</h3>
 <code>for i in {1..255}; do (ping -c 1 192.168.1.${i} | grep "bytes from" &); done</code>
-<h6>Bash Simple portscan</h6>
+<h3>Bash Simple portscan</h3>
 <code>for i in {1..65535}; do (echo > /dev/tcp/192.168.1.1/$i) >/dev/null 2>&1 && echo $i is open; done</code>
 <h3>Proxy tools</h3>
-<ul>
-  <li>Proxychains</li>
-  <p>example to proxy a netcat</p>
-  <code>proxychains nc 172.16.0.10 23</code>
-  <p>note:</p>
+<h4>Proxychains</h4>
+<p>example to proxy a netcat</p>
+<code>proxychains nc 172.16.0.10 23</code>
+<p>notes:</p>
   <ul>
     <li>when using nmap w/ proxychains comment out proxy_dns inside the proxychains.conf file</li>
     <li>only tcp scan will work</li>
