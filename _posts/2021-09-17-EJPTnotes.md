@@ -50,3 +50,6 @@ toc_sticky: true
 <h4>Foxyproxy</h4>
 <p>proxy for routing browser traffic</p>
 <h3>SSH Tunneling / Port Forwarding</h3>
+<h4>Port Forwarding - Local: From attacker to victim via SSH</h4>
+<p>Attacker --ssh--> 172.16.0.5 --http--> 172.16.0.5</p>
+<code>ssh -L 8000:172.16.0.10:80 user@172.16.0.5 -fN</code>
