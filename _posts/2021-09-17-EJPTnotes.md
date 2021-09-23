@@ -53,10 +53,10 @@ toc_sticky: true
 <h4>Port Forwarding - Local: From attacker to victim via SSH</h4>
 <p>Attacker --ssh--> 172.16.0.5 --http--> 172.16.0.5</p>
 <code>ssh -L 8000:172.16.0.10:80 user@172.16.0.5 -fN</code>
-<ul>
-  <li>-f = backgrounds shell immediately</li>
-  <li>-N = tells SSH that it doesn;t need to execute any commands - and just set up the connection</li>
-</ul>
+  <ul>
+    <li>-f = backgrounds shell immediately</li>
+    <li>-N = tells SSH that it doesn;t need to execute any commands - and just set up the connection</li>
+  </ul>
 <p>Now we can access the webserver on 172.16.0.10 using our own box localhost:8000</p>
 <h5>Proxies</h5>
 <code>ssh -D 1337 user@172.16.0.5 -fN</code>
