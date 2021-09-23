@@ -55,9 +55,10 @@ toc_sticky: true
 <code>ssh -L 8000:172.16.0.10:80 user@172.16.0.5 -fN</code>
 <ul>
   <li>-f = backgrounds shell immediately</li>
-  <li>-N tells SSH that it doesn;t need to execute any commands - and just set up the connection</li>
+  <li>-N = tells SSH that it doesn;t need to execute any commands - and just set up the connection</li>
 </ul>
 <p>Now we can access the webserver on 172.16.0.10 using our own box localhost:8000</p>
-<h4>Proxies</h4>
+<h5>Proxies</h5>
 <code>ssh -D 1337 user@172.16.0.5 -fN</code>
 <p>Will open port 1337 on attacker's machine as a proxy to send data through the 172.16.0.5 network - useful when combined with proxy chains -  just make sure proxy chains conf is configured correctly</p>
+<h4>Reverse Connection</h4>
