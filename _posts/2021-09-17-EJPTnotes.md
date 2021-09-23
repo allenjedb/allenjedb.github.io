@@ -76,3 +76,6 @@ toc_sticky: true
 <p>for the keyfile we need to convert it using puttygen tool</p>
 <code>puttygen KEYFILE -o OUTPUT_KEY.ppk</code>
 <h4>Socat</h4>
+<p>Static Binaries for Socat</p>
+<a href="https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat">Socat for Linux</a>
+<a href="https://sourceforge.net/projects/unix-utils/files/socat/1.7.3.2/socat-1.7.3.2-1-x86_64.zip/download">Socat for Windows</a>
