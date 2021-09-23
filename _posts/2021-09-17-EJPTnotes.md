@@ -66,5 +66,5 @@ toc_sticky: true
 
 <li>Generate ssh key - add pub to our attacker's authorized keys - add the following lines at the beginning of the pub key to prevent reverse shell and only allow port forwarding</li>
 <code>command="echo 'This account can only be used for port forwarding'",no-agent-forwarding,no-x11-forwarding,no-pty</code>
-<li></li>
-</ul>
+<code>ssh -R 8000:172.16.0.10:80 kali@172.16.0.20 -i KEYFILE -fN</code>
+<p>we have a shell on victim(.05) and we want to use it as a reverse connection from our machine(.20) to webseserver victim(.10)</p>
