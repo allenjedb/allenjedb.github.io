@@ -62,3 +62,9 @@ toc_sticky: true
 <code>ssh -D 1337 user@172.16.0.5 -fN</code>
 <p>Will open port 1337 on attacker's machine as a proxy to send data through the 172.16.0.5 network - useful when combined with proxy chains -  just make sure proxy chains conf is configured correctly</p>
 <h4>Reverse Connection</h4>
+<p>used when we got a shell in the victim's machine but no SSH access</p>
+<ul>
+  <li>Generate ssh key - add pub to our attacker's authorized keys - add the following lines at the beginning of the pub key to prevent reverse shell and only allow port forwarding</li>
+  <code>command="echo 'This account can only be used for port forwarding'",no-agent-forwarding,no-x11-forwarding,no-pty</code>
+  <li></li>
+</ul>
