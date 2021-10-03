@@ -67,3 +67,6 @@ toc_sticky: true
 
 <h2>vuln assessment</h2>
 
+<h3>sql</h3>
+<p>https://gist.github.com/hofmannsven/9164408</p>
+

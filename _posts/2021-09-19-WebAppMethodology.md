@@ -14,7 +14,11 @@ toc_sticky: true
 <h2 id="wtdvsawbapp">What to do vs a Web App</h2>
 
 <ul>
+    <li>check website is it php,asp or html</li>
+    <li>check source code does it use cms</li>
     <li>Check robots.txt</li>
     <li>Gobuster dir and subdomain</li>
+    <li>sql?</li>
+    <li>xxs?</li>
     <li>WIP</li>
 </ul>

