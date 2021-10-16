@@ -1,6 +1,6 @@
 ---
 title: Windows Enum
-date: 2021-11-10
+date: 2021-10-11
 categories:
   - Notes
 tags:
