@@ -8,6 +8,20 @@ tags:
   - SQL
 excerpt_separator: <!--more-->
 ---
+
+
+<style>
+  pre {
+     overflow-x: auto;
+     white-space: pre-wrap;
+     white-space: -moz-pre-wrap;
+     white-space: -pre-wrap;
+     white-space: -o-pre-wrap;
+     word-wrap: break-word;
+  }
+</style>
+
+
 <p><img src="/assets/images/dvwa/SQLi/sql.png" alt="" /></p>
 
 <h1>SQL Injection</h1>
