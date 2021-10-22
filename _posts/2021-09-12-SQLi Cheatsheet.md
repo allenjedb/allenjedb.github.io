@@ -53,7 +53,7 @@ Display all the columns field contents in the information_schema user table<br>
 
 <h2>Nosql</h2>
 
-<h4>shitscript</h4>
+<h4>Shitscript</h4>
 
 
 <pre><code>
