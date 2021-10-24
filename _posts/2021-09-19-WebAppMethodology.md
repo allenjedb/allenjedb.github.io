@@ -22,7 +22,7 @@ toc_sticky: true
     <li>nikto</li>
     <li>Authorization vulns</li>
     <li>Code Injections? - can you control an input/data - eval(input)</li>
-    <li>sql?</li>
+    <li>sqli? - https://www.hackingarticles.in/bypass-filter-sql-injection-manually/</li>
     <li>xxs?</li>
     <li>WIP</li>
 </ul>
