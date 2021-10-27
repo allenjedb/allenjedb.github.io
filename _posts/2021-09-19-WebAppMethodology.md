@@ -11,10 +11,15 @@ toc: true
 toc_sticky: true
 ---
 
-#container {
-  float: left;
-  margin: 0 -200px 110 0;
-  width: 100%;
+fieldset
+{
+  max-width:500px;
+  padding:16px;	
+}
+.legend1
+{
+  margin-bottom:0px;
+  margin-left:16px;
 }
 
 <h2 id="wtdvsawbapp">What to do vs a Web App</h2>
