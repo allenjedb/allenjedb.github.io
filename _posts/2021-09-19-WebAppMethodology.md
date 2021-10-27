@@ -51,6 +51,7 @@ toc_sticky: true
 
 <h2>JWT</h2>
 <p>header.data.signature - all in base64</p>
+<p>set alg to None - remove signature </p>
 
 <h2>apache and tomcat</h2>
 <p>encoding of .. = %252e%252e</p>
