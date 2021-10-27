@@ -13,7 +13,7 @@ toc_sticky: true
 
 #container {
   float: left;
-  margin: 0 -340px 0 0;
+  margin: 0 -200px 110 0;
   width: 100%;
 }
 
@@ -92,4 +92,4 @@ toc_sticky: true
 </fieldset>
 
 
-g0tmilku
+g0tmilk
