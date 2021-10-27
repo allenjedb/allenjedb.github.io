@@ -116,6 +116,9 @@ toc_sticky: true
 <code>' or substr (user(), 1, 1)= 'b</code>
 <p>used to bruteforce user by asking whats the username letter by letter - db will answer 1 or 0</p>
 
+<img src="/assets/images/unionsql.png" alt="" /><br>
+
+
 <code>' UNION SELECT user(); -- -';</code>
 <p>third dash is to prevent browsers from deleting the trailing space</p>
 
