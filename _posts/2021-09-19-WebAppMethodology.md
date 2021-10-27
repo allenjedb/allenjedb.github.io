@@ -11,16 +11,15 @@ toc: true
 toc_sticky: true
 ---
 
-fieldset
-{
-  max-width:500px;
-  padding:16px;	
-}
-.legend1
-{
-  margin-bottom:0px;
-  margin-left:16px;
-}
+<style>
+  .fieldset
+  {
+      border:2px solid black;
+      -moz-border-radius:8px;
+      -webkit-border-radius:8px;	
+      border-radius:8px;	
+  }
+  </style>
 
 <h2 id="wtdvsawbapp">What to do vs a Web App</h2>
 
