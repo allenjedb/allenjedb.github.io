@@ -11,6 +11,12 @@ toc: true
 toc_sticky: true
 ---
 
+#container {
+  float: left;
+  margin: 0 -340px 0 0;
+  width: 100%;
+}
+
 <h2 id="wtdvsawbapp">What to do vs a Web App</h2>
 
 <ul>
