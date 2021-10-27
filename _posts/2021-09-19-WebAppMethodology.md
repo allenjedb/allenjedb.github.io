@@ -18,6 +18,9 @@ toc_sticky: true
       -moz-border-radius:8px;
       -webkit-border-radius:8px;	
       border-radius:8px;	
+      font-size:12px;
+      padding:10px;
+      width:250px;
   }
   </style>
 
