@@ -1,9 +1,9 @@
 import cPickle
 import os
         
-        iclass Blah(object):
+        class Blah(object):
           def __reduce__(self):
-            return (os.system,('command'.))'
+            return (os.system,('command'))'
         
         
         b = Blah()
