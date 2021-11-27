@@ -106,3 +106,6 @@ while True:
 <code>1' UNION SELECT 'asd', banner FROM v$version--</code>
 
 <p>use table called dual to enum columns</p>
+
+<h2>TrackingId=xyz'||(SELECT '' FROM dual)||'---test on cookie header TrackingId is a cookie </h2>
+<p>Limit output of rows = rownum=1  ---same as Limit 1 for mysql</p>
