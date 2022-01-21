@@ -139,6 +139,8 @@ Because we have a web server it is always a good idea to run gobuster and nikto 
 
 </details>
 
+## USER
+
 I tried several SQLi payloads against the login form but failed to bypass authentication. So let's go back and browse the web app again to find anything interesting.
 
 Browsing through the page does not give us anything interesting. Our Nikto scans didn't really give us anything aswell. 
@@ -336,6 +338,8 @@ Now we should have the passphrase. And should be able to ssh as barry.
 barry@mustacchio:~$ ls
 user.txt
 ```
+
+## ROOT
 
 Now I tried to download **_linpeas.sh_** from my box but it does not seem to work. so I looked for other users in the box instead and found **_joe_** user.
 
