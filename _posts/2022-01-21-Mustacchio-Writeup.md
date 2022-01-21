@@ -23,8 +23,7 @@ toc_sticky: true
 
 ### Initial Scan
 
-<details>
-  <summary>Initial Nmap</summary>
+>Initial Nmap
 
 ```bash
 Nmap scan report for 10.10.123.254
@@ -50,12 +49,9 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 40.95 seconds
 ```
 
-</details>
-
 ### All Ports Scan
 
-<details>
-  <summary>All Ports Nmap</summary>
+All Ports Nmap
 
 ```bash
 Nmap scan report for 10.10.123.254
@@ -67,21 +63,18 @@ PORT     STATE SERVICE
 8765/tcp open  ultraseek-http
 ```
 
-</details>
-
 From our NMAP results we can see that we have two web server ports open.
 Browsing to port 80 gives us this web server.
 
-![Port80-webserver](https://github.com/allenjedb/Notes/blob/main/writeups/THM/Mustacchio/img/hompage.png "Mustacchio Web Page")
+![Port80-webserver](https://raw.githubusercontent.com/allenjedb/HaxNotes/main/writeups/THM/Mustacchio/img/hompage.png "Mustacchio Web Page")
 
 While port 8765 brings us to a log in page.
 
-![Port8765-webserver](https://github.com/allenjedb/Notes/blob/main/writeups/THM/Mustacchio/img/adminpanel.png)
+![Port8765-webserver](https://raw.githubusercontent.com/allenjedb/HaxNotes/main/writeups/THM/Mustacchio/img/adminpanel.png)
 
 Because we have a web server it is always a good idea to run gobuster and nikto in the background while browsing the web server.
 
-<details>
-  <summary>Nikto Scan Port 80</summary>
+Nikto Scan Port 80
 
 ```bash
 + Server: Apache/2.4.18 (Ubuntu)
@@ -100,11 +93,7 @@ Because we have a web server it is always a good idea to run gobuster and nikto 
 
 ```
 
-</details>
-
-
-<details>
-  <summary>Nikto Scan Port 8765</summary>
+Nikto Scan Port 8765
 
 ```bash
 + Server: nginx/1.10.3 (Ubuntu)
@@ -119,10 +108,7 @@ Because we have a web server it is always a good idea to run gobuster and nikto 
 
 ```
 
-</details>
-
-<details>
-  <summary>Gobuster Port 80</summary>
+Gobuster Port 80
 
 ```bash
 /images               (Status: 301) [Size: 313] [--> http://10.10.129.75/images/]
@@ -131,17 +117,12 @@ Because we have a web server it is always a good idea to run gobuster and nikto 
 /custom               (Status: 301) [Size: 313] [--> http://10.10.129.75/custom/]
 ```
 
-</details>
-
-<details>
-  <summary>Gobuster Port 8765</summary>
+Gobuster Port 8765
 
 ```bash
 /assets               (Status: 301) [Size: 194] [--> http://10.10.129.75:8765/assets/]
 /auth                 (Status: 301) [Size: 194] [--> http://10.10.129.75:8765/auth/]
 ```
-
-</details>
 
 ## USER
 
@@ -150,7 +131,7 @@ I tried several SQLi payloads against the login form but failed to bypass authen
 Browsing through the page does not give us anything interesting. Our Nikto scans didn't really give us anything aswell. 
 Gobuster showed us that there is a **_/custom_** directory, and inside that directory we can see **_js_** and **_css_** normally we won't really find anything interesting in these folders but in this case there is a **_users.bak_** file inside the **_js_** directory. Let's download the file and inspect it locally.
 
-![users.bak](https://github.com/allenjedb/Notes/blob/main/writeups/THM/Mustacchio/img/usersbak.png)
+![users.bak](https://raw.githubusercontent.com/allenjedb/HaxNotes/main/writeups/THM/Mustacchio/img/usersbak.png)
 
 Running `strings` command against users.bak gave us this output.
 
@@ -191,7 +172,7 @@ after a few seconds we have the result **_1868e36a6d2b17d4c2745f1659433a54d4bc5f
 
 Now we can test if this credential will work on port 8765
 
-![Loggedin](https://github.com/allenjedb/Notes/blob/main/writeups/THM/Mustacchio/img/adminloggedin.png)
+![Loggedin](https://raw.githubusercontent.com/allenjedb/HaxNotes/main/writeups/THM/Mustacchio/img/adminloggedin.png)
 
 And we are in!
 
@@ -246,7 +227,7 @@ I did not immediately notice but this contains an XML file that we can probably 
 
 I copied the whole contents of the file and submitted it as comment and we can see that it worked.
 
-![XXEcomment](https://github.com/allenjedb/Notes/blob/main/writeups/THM/Mustacchio/img/xxecomment.png)
+![XXEcomment](https://raw.githubusercontent.com/allenjedb/HaxNotes/main/writeups/THM/Mustacchio/img/xxecomment.png)
 
 Now let's edit the xml contents and try reading **_/etc/passwd_** using the following payload.
 
@@ -266,7 +247,7 @@ ve been playing with your dog, or eating your cat, but no. You want to read this
 
 And it worked! As we can see the name part has been replaced with the contents of **_/etc/passwd_**
 
-![xxepasswd](https://github.com/allenjedb/Notes/blob/main/writeups/THM/Mustacchio/img/xxeworked.png)
+![xxepasswd](https://raw.githubusercontent.com/allenjedb/HaxNotes/main/writeups/THM/Mustacchio/img/xxeworked.png)
 
 As we saw from the output of **_/etc/passwd_** we have a user *_barry_* I tried accessing his home directory and reading **_user.txt_** 
 
