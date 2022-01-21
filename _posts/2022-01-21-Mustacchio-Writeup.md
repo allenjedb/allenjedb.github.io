@@ -17,8 +17,6 @@ toc_sticky: true
 
 <!--more-->
 
-# Mustacchio
-
 ## NMAP
 
 ### Initial Scan
