@@ -12,6 +12,10 @@ toc: true
 toc_sticky: true
 ---
 
+<p>Easy Rated THM Machine that covers XXE vulnerability and Path Variable Privilege Escalation</p>
+
+
+<!--more-->
 
 # Mustacchio
 
