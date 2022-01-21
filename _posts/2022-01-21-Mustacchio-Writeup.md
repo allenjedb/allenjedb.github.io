@@ -6,7 +6,6 @@ categories:
 tags:
   - xxe
   - path variable
-  - privesc
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
