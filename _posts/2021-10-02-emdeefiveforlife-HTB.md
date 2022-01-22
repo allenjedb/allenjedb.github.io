@@ -8,7 +8,7 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-image: htb.png
+image: htblogo.png
 ---
 
 WIP
