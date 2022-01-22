@@ -12,11 +12,11 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-image: bookstore.jpeg
+image: thm.png
 
 ---
 
-Medium rated THM machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access.
+Medium rated TryHackMe machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access.
 
 <!--more-->
 
