@@ -13,11 +13,11 @@ author_profile: true
       </h2>
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime='{{ post.date | date: "%b %-d, %Y" }}' style="font-size:10px;">{{ post.date }}</time>
+        <time datetime='{{ post.date | date: "%b %-d, %Y" }}' style="font-size:20px;">{{ post.date }}</time>
        
       </span>
-      <span class="reading-time" title="Estimated read time" style="font-size:10px;">
-        <i class="fa fa-clock-o" style="font-size:24px"></i>
+      <span class="reading-time" title="Estimated read time" style="font-size:20px;">
+        <i class="fas fa-stopwatch"></i>
         {% assign words = content | number_of_words %}
         {% if words < 360 %}
           1 min read
