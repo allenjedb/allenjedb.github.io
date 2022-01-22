@@ -15,8 +15,8 @@ toc_sticky: true
 image: thm.png
 
 ---
-<img src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">
-Medium rated TryHackMe machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access.
+
+
 
 <!--more-->
 
