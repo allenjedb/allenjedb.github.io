@@ -9,7 +9,7 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-image: mustacchio.png
+image: mustacchi.png
 ---
 
 <p>Easy rated THM Machine that covers XXE vulnerability and Path Variable Privilege Escalation</p>
