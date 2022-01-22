@@ -1,6 +1,6 @@
 ---
 title: Bookstore
-date: '2022-01-22'
+date: 2022-01-22
 categories:
   - Writeup
 tags:
