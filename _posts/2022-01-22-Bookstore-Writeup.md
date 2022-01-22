@@ -12,7 +12,6 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-entries_layout: grid
 header:
   teaser: /assets/images/thm.png
 
