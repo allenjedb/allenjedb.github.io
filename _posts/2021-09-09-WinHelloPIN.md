@@ -8,6 +8,11 @@ tags:
   - Fixes
   
 ---
+
+
+WIP
+<!--more-->
+
 <p><img src="/assets/images/windowshello.png" alt="" /></p>
 
 <p>delete content of NGC folder.</p>
