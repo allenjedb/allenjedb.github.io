@@ -12,10 +12,10 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-featured-image: /assets/images/thm/bookstore/bookstore.jpeg
+related_image: /assets/images/thm/bookstore/bookstore.jpeg
 ---
 
-Medium rated THM Machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access.
+Medium rated THM machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access.
 <!--more-->
 
 ## NMAP
