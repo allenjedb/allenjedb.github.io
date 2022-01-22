@@ -12,8 +12,8 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-post_image: /assets/images/thm/bookstore/bookstore.jpeg
-post_description: Medium rated THM machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access.
+post_image: "/assets/images/thm/bookstore/bookstore.jpeg"
+post_description: "Medium rated THM machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access."
 ---
 
 
