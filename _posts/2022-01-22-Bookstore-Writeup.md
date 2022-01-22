@@ -234,6 +234,7 @@ connect to [10.4.14.51] from (UNKNOWN) [10.10.87.239] 36176
 /bin/sh: 0: can't access tty; job control turned off
 $ 
 ```
+## ROOT
 
 And we have a shell as sid! Now the first thing I did is to create an SSH key and save to sid's **_/.ssh/authorized_keys_** file so we I can ssh.
 
