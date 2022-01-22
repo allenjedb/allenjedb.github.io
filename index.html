@@ -5,3 +5,25 @@
 layout: home
 author_profile: true
 ---
+
+<div class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <h2>
+        <a class="post-link" href="{{ post.url | strip_html | truncatewords:75 }}">{{ post.title }}</a>
+      </h2>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime='{{ post.date | date: "%b %-d, %Y" }}'>{{ post.date}}</time>
+      </span>
+      {% include read_time.html %}
+
+
+    <img src="{{ site.baseurl }}/assets/images/{{ post.image }}">
+
+
+
+    {{ post.excerpt }}
+  {% endfor %}
+  </div>

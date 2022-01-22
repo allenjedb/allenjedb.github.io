@@ -12,9 +12,7 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-header:
-  teaser: /assets/images/thm.png
-
+image: thm.png
 ---
 
 Medium rated TryHackMe machine that covers some basic API pentesting and analyzing a C program using **_Ghidra_** to gain Root access.
