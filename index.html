@@ -11,9 +11,6 @@ author_profile: true
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }},</span>
-        <span class="post-meta">por</span>
-        <span class="post-meta">{{ post.author }}</span>
       </li>
 
 
@@ -21,6 +18,5 @@ author_profile: true
 
 
       {{ post.excerpt }}
-      <a class="btn btn-default" href="{{ post.url | prepend: site.baseurl }}">Continuar lendo</a>
     {% endfor %}
   </ul>
