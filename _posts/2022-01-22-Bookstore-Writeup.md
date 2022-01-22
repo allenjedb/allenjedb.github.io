@@ -15,7 +15,7 @@ toc_sticky: true
 image: /assets/images/thm/bookstore.jpeg
 ---
 
-![Image alt](/assets/images/thm/bookstore.jpeg "bookstore")Medium rated THM Machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access.
+![Image alt](/assets/images/thm/bookstore/bookstore.jpeg "bookstore") Medium rated THM Machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access.
 <!--more-->
 
 ## NMAP
