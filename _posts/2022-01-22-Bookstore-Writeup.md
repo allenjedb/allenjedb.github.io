@@ -12,7 +12,7 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-related_image: /assets/images/thm.png
+related_image: thm.png
 
 ---
 
