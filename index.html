@@ -13,7 +13,7 @@ author_profile: true
       </h2>
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true" style="font-size:15px;"></i>
-        <time datetime="{{ page.date | date_to_long_string }}" style="font-size:15px;">{{ page.date }}</time>
+        <time datetime='{{ page.date | date: "%-d %B %Y"}}' style="font-size:15px;">{{ post.date }}</time>
        
       </span>
       <span class="reading-time" title="Estimated read time" style="font-size:15px;">
