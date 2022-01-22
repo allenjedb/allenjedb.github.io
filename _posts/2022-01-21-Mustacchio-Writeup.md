@@ -48,7 +48,7 @@ Nmap done: 1 IP address (1 host up) scanned in 40.95 seconds
 
 ### All Ports Scan
 
-All Ports Nmap
+>All Ports Nmap
 
 ```bash
 Nmap scan report for 10.10.123.254
