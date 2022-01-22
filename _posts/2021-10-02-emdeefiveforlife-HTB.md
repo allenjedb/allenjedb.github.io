@@ -1,3 +1,20 @@
+---
+title: emdeefiveforlife
+date: 2021-10-02
+categories:
+  - Writeup
+tags:
+  - scripting
+excerpt_separator: <!--more-->
+toc: true
+toc_sticky: true
+image: htb.png
+---
+
+WIP
+<!--more-->
+
+
 ```bash
 #!/bin/bash
 
