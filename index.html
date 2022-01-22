@@ -5,21 +5,3 @@
 layout: home
 author_profile: true
 ---
-
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <h2>
-        <a class="post-link" href="{{ post.content | strip_html | truncatewords: 50 }}">{{ post.title }}</a>
-      </h2>
-      <h4>{{ post.date | date: "%b %-d, %Y" }},</h4>
-    </li>
-
-
-    <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">>
-
-
-
-    {{ post.excerpt }}
-  {% endfor %}
-</ul>
