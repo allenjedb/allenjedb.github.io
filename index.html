@@ -6,6 +6,11 @@ layout: home
 author_profile: true
 ---
 
-{% if page.related_image %}
-  <img src="{{ page.related_image }}" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">>
-{% endif %}
+<ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
