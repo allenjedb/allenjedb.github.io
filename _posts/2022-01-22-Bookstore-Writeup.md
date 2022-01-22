@@ -19,9 +19,6 @@ toc_sticky: true
 
 <!--more-->
 
-
-# Bookstore
-
 ## NMAP
 
 ### All Ports
