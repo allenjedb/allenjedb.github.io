@@ -7,7 +7,5 @@ author_profile: true
 ---
 
 {% for post in site.posts %}
-    {% if page.related_image %}
-        <img src="{{ page.related_image }}" alt="">
-    {% endif %}
+  <img src="{% post.related_image %}" />
 {% endfor %}
