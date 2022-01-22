@@ -5,3 +5,23 @@
 layout: home
 author_profile: true
 ---
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }},</span>
+      <span class="post-meta">por</span>
+      <span class="post-meta">{{ post.author }}</span>
+    </li>
+
+
+    <img src="{{ site.baseurl }}/assets/images{{ post.image }}">
+
+
+
+    {{ post.excerpt }}
+  {% endfor %}
+</ul>
