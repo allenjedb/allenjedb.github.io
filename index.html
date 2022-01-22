@@ -10,7 +10,7 @@ author_profile: true
   {% for post in site.posts %}
     <li>
       <h2>
-        <a class="post-link" href="{{ post.url | strip_html | truncatewords:75 }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
@@ -20,7 +20,7 @@ author_profile: true
       {% include read_time.html %}
 
 
-    <img src="{{ site.baseurl }}/assets/images/{{ post.image }}">
+    <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">
 
 
 
