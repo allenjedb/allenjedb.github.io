@@ -12,7 +12,9 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-image: thm.png
+entries_layout: grid
+header:
+  teaser: "/assets/images/thm.png"
 
 ---
 
