@@ -13,7 +13,6 @@ author_profile: true
       </h2>
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <h4>
         <time datetime='{{ post.date | date: "%b %-d, %Y" }}'>{{ post.date }}</time>
        
       </span>
@@ -26,7 +25,6 @@ author_profile: true
           {{ words | divided_by:180 }} mins read
         {% endif %}
       </span>
-    </h4>
 
 
     <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">
