@@ -15,7 +15,7 @@ toc_sticky: true
 related_image: /assets/images/thm.png
 
 ---
-<img src="/assets/images/htb-writeup-previse/Previse.png" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">
+<img src="/assets/images/thm.png" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">
 Medium rated TryHackMe machine that covers some basic API pentesting and analyzing a C program using **_Ghidra_** to gain Root access.
 
 <!--more-->
