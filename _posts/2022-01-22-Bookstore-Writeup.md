@@ -14,11 +14,11 @@ toc: true
 toc_sticky: true
 entries_layout: grid
 header:
-  teaser: "/assets/images/thm.png"
+  teaser: /assets/images/thm.png
 
 ---
 
-Medium rated THM machine that covers some basic API pentesting and analyzing a C program using **_Ghidra_** to gain Root access.
+Medium rated TryHackMe machine that covers some basic API pentesting and analyzing a C program using **_Ghidra_** to gain Root access.
 
 <!--more-->
 
