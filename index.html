@@ -5,3 +5,10 @@
 layout: home
 author_profile: true
 ---
+
+<p class="archive__item-excerpt" itemprop="description">
+    {% for post in site.posts %}
+    <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">
+    Medium rated TryHackMe machine that covers some basic API pentesting and analyzing a C program using Ghidra to gain Root access.
+    
+    </p>
