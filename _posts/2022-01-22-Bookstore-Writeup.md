@@ -16,7 +16,7 @@ related_image: /assets/images/thm.png
 
 ---
 
-Medium rated TryHackMe machine that covers some basic API pentesting and analyzing a C program using **_Ghidra_** to gain Root access.
+Medium rated THM machine that covers some basic API pentesting and analyzing a C program using **_Ghidra_** to gain Root access.
 
 <!--more-->
 
