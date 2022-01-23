@@ -28,6 +28,11 @@
     {% include page__meta.html type=include.type %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description"> <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="" style="float: right;margin: 0 0 0 5px; height:110px;">{{ post.excerpt | markdownify | strip_html | truncate: 400 }}</p>{% endif %}
 
-
+    <span class="taggs" style="font-size:12px;margin: 0 0 0 0;">
+    <i class="fas fa-tags"></i>
+    {% for tag_word in post.tags %}
+      <a href="#test" class="page__taxonomy-item p-category">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep"> </span>{% endunless %}
+    {% endfor %}
+  </span>
   </article>
 </div>
