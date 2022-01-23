@@ -168,7 +168,11 @@ Going back to my host machine and then running `hashcat.exe -m 100 mustacchio.tx
 Where:
 * -m 100 = Sha1 [Hashcat Formats](https://hashcat.net/wiki/doku.php?id=example_hashes)
 
-after a few seconds we have the result **_1868e36a6d2b17d4c2745f1659433a54d4bc5f4b:<redacted>_**
+after a few seconds we have the result. 
+
+```bash
+1868e36a6d2b17d4c2745f1659433a54d4bc5f4b:<redacted>
+```
 
 Now we can test if this credential will work on port 8765
 
