@@ -12,7 +12,7 @@ toc_sticky: true
 image: mustacchi.png
 ---
 
-<p>Easy rated THM Machine that covers XXE vulnerability and Path Variable Privilege Escalation</p>
+<p>Easy rated TryHackMe machine that covers XXE vulnerability to read sensitive user info like ssh-keys, this machine also covers some basic hash cracking while the privilege escalation to Path Variable vulnerability in log_monitoring program. </p>
 
 
 <!--more-->
