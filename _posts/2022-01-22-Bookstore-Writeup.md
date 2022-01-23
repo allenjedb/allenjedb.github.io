@@ -15,7 +15,7 @@ toc_sticky: true
 image: thm.png
 ---
 
-Medium rated TryHackMe machine that covers some basic API pentesting and analyzing a C program using **_Ghidra_** to gain Root access.
+Medium rated TryHackMe machine that covers some basic API pentesting, FUZZING the API using our own python script to gain User access and analyzing a C program using **_Ghidra_** to escalate privilege. Medium rated TryHackMe machine that covers some basic API pentesting, FUZZING the API using our own python script to gain User access and analyzing a C program using **_Ghidra_** to escalate privilege.
 
 <!--more-->
 
