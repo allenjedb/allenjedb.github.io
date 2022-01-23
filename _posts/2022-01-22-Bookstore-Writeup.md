@@ -3,6 +3,7 @@ title: Bookstore
 date: 2022-01-22
 categories:
   - Writeup
+  - THM
 tags:
   - API
   - LFI

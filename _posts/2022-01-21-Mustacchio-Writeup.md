@@ -3,6 +3,7 @@ title: Mustacchio
 date: 2022-01-21
 categories:
   - Writeup
+  - THM
 tags:
   - xxe
   - path variable
