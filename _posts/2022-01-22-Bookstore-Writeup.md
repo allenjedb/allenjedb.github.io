@@ -12,7 +12,7 @@ tags:
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
-image: Book_Store.webp
+image: bookstorelogo.png
 ---
 
 Medium rated TryHackMe machine that covers some basic API pentesting, FUZZING the API using our own python script to gain User access and analyzing a C program using **_Ghidra_** to escalate privilege. 
