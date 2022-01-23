@@ -19,10 +19,11 @@
     {% endif %}
     <h2 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a><img src="{{ site.baseurl }}/assets/images/{{ post.platform }}" alt="" style="height:24px; margin-left:10px"> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
+      <img src="{{ site.baseurl }}/assets/images/{{ post.platform }}" alt="" style="height:24px; margin-left:10px">
     </h2>
     {% include page__meta.html type=include.type %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description"> <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="" style="float: right;margin: 0 0 0 5px; height:110px;">{{ post.excerpt | markdownify | strip_html | truncate: 400 }}</p>{% endif %}
