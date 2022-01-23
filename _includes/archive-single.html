@@ -29,8 +29,8 @@
 
 
     <i class="fas fa-tags"></i>
-    {% for tag in post.tags %}
-      <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+    {% for tag_word in post.tags %}
+      <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
     {% endfor %}
   </article>
 </div>
