@@ -10,6 +10,7 @@ excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
 image: mustacchi.png
+platform: thmicon.webp
 ---
 
 <p>Easy rated TryHackMe machine that covers XXE vulnerability to read sensitive user info like ssh-keys, this machine also covers some basic hash cracking while the privilege escalation to Path Variable vulnerability in log_monitoring program. </p>
