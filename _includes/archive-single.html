@@ -31,7 +31,7 @@
     <span class="taggs" style="font-size:12px;margin: 0 0 0 0;">
     <i class="fas fa-tags"></i>
     {% for tag_word in post.tags %}
-      <a href="#test" class="page__taxonomy-item p-category" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep"> </span>{% endunless %}
+      <a href="#test" class="page__taxonomy-item p-category">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep"> </span>{% endunless %}
     {% endfor %}
   </span>
   </article>
