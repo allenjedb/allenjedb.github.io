@@ -108,14 +108,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-  - scope:
-      path: "assets/**"
-    values: 
-      sitemap: false
-  - scope:
-      path: "scripts/**"
-    values: 
-      sitemap: false
+#  - scope:
+#      path: "assets/**"
+#    values: 
+#      sitemap: false
+#  - scope:
+#      path: "scripts/**"
+#    values: 
+#      sitemap: false
 
 category_archive:
   type: liquid
