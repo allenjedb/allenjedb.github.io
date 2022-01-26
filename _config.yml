@@ -109,11 +109,11 @@ defaults:
       layout: single
       author_profile: true
   - scope:
-      path: "/assets/**"
+      path: "assets/**"
     values: 
       sitemap: false
   - scope:
-      path: "/scripts/**"
+      path: "scripts/**"
     values: 
       sitemap: false
 
