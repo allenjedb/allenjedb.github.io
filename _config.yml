@@ -91,10 +91,9 @@ footer:
 defaults:
   # _posts
   - scope:
-      path: "assets/**"
+      path: ""
       type: posts
     values:
-      sitemap: false
       layout: single
       author_profile: true
       read_time: true
@@ -109,6 +108,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: "/assets/**"
+    values: 
+      sitemap: false
+  - scope:
+      path: "/scripts/**"
+    values: 
+      sitemap: false
 
 category_archive:
   type: liquid
