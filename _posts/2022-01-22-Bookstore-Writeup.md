@@ -17,7 +17,7 @@ image: bookstorelogo.png
 platform: thmicon.webp
 ---
 
-Medium rated TryHackMe machine that covers some basic API pentesting, FUZZING the API using our own python script to gain User access and analyzing a C program using **_Ghidra_** to escalate privilege to Root. 
+Medium rated TryHackMe achine that covers some basic API pentesting, fuzzing the API using our own python script to gain User access and analyzing a C program using **_Ghidra_** to escalate privilege to Root. 
 
 <!--more-->
 
