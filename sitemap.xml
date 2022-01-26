@@ -41,7 +41,7 @@ sitemap:
         {% for post in collection.docs %}
             {% unless post.published == false or post.sitemap.exclude == "yes" or page.name == "feed.xml"  %}
                 <url>
-                    <loc>{{ site.Url }}{{ post.url }}</loc>
+                    <loc>{{ site.url }}{{ post.url }}</loc>
                     {% if post.sitemap.lastmod %}
                         <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
                     {% elsif post.date %}
