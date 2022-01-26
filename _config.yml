@@ -91,9 +91,10 @@ footer:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "assets/**"
       type: posts
     values:
+      sitemap: false
       layout: single
       author_profile: true
       read_time: true
