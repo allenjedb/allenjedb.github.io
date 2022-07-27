@@ -36,7 +36,7 @@ PORT   STATE SERVICE
 
 
 
-![admin](assets\images\noname-pg\2022-07-27-15-23-21.png)
+![](assets\images\noname-pg\2022-07-27-15-23-21.png)
 
 - Checking burp request 
 
@@ -52,6 +52,7 @@ PORT   STATE SERVICE
 - Tried some basic reverse shell. but did not work.
 - tried `ls` and also did not return anything
 - tried `cat superadmin.php`
+
 ```php
 <?php
    if (isset($_POST['submitt']))
