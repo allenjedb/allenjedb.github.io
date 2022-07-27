@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
 image: offsec.png
-platform: offsecsil.png
+platform: offsecsil2.png
 ---
 
 
