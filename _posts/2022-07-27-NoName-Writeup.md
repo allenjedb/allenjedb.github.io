@@ -14,6 +14,10 @@ image: offsec.png
 platform: offsecsil2.png
 ---
 
+Easy rated Proving Grounds play machine that covers command injection and SUID privesc. 
+
+<!--more-->
+
 
 ## NMAP
 
