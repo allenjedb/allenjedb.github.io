@@ -41,7 +41,7 @@ Intercepting the request with burp we can see two parameters `pinger` and `submi
 
 ![](\assets\images\noname-pg\2022-07-27-15-42-17.png)
 
-Trying command injection with `sleep` command. I tried `;` and `&` but did not work, while trying `|` worked
+Trying command injection with `sleep` command. I tried to chain using `;` and `&` but it did not work, while trying `|` worked.
 
 ![](\assets\images\noname-pg\2022-07-27-15-43-36.png)
 
