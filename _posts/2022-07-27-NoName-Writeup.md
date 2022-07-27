@@ -17,9 +17,10 @@ platform: offsecsil.png
 
 ## NMAP
 
+```
 PORT   STATE SERVICE
 80/tcp open  http
-
+```
 
 ## Port 80 Enumeration
 
@@ -31,7 +32,7 @@ PORT   STATE SERVICE
 
 
 
-![](2022-07-27-15-23-21.png)
+![](admin.png)
 
 - Checking burp request 
 
