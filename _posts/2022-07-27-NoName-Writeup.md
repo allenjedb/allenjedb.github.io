@@ -14,7 +14,7 @@ image: offsec.png
 platform: offsecsil2.png
 ---
 
-Easy rated Proving Grounds Play machine that covers command injection and SUID privesc. 
+NoName is an intermediate rated Proving Grounds Play machine that covers command injection and SUID privesc. 
 
 <!--more-->
 
