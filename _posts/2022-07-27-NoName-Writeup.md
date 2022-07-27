@@ -74,7 +74,7 @@ echo "<pre>$outer</pre>";
 ?>
 ```
 
-Looks like there are blacklisted characters and commands, that's why we can't `ls` and `cat /etc/passwd`. From here I thought we can try try echoing a `base64` encoded command then pipe it to `base64 -d` then to `bash`. Something like the following:
+Looks like there are blacklisted characters and binaries, that's why we can't `ls` and `cat /etc/passwd`. From here I thought we can try try echoing a `base64` encoded command then pipe it to `base64 -d` then to `bash`. Something like the following:
 ```bash
 echo 'Y2F0IC9ldGMvcGFzc3dk' | base64 -d | bash`
 ```
