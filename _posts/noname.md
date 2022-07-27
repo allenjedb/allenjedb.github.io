@@ -1,3 +1,22 @@
+---
+title: NoName - Proving Grounds
+date: 2022-07-27
+categories:
+  - Writeup
+  - Proving Grounds
+tags:
+  - Command injection
+  - SUID
+excerpt_separator: <!--more-->
+toc: true
+toc_sticky: true
+image: offsec.png
+platform: offsecsil.png
+---
+
+
+
+
 # Noname
 
 
@@ -15,7 +34,7 @@ PORT   STATE SERVICE
     - `admin` only has pictures no functionality
     - `superadmin.php` looks like we can ping any IP address 
 
-![](2022-07-27-15-23-21.png)
+
 
 ![](2022-07-27-16-55-29.png)
 
