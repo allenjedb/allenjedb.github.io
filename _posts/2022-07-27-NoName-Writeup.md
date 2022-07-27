@@ -30,7 +30,7 @@ PORT   STATE SERVICE
 
 I started with my usual enumeration of http with Nikto and Gobuster. Nikto did not return anthing interesting while Gobuster returned `admin` and `superadmin.php`
 
-    - `admin` only has pictures posted with no functionality
+    - `admin` only has pictures posted with no functionality.
     - `superadmin.php` looks more interesting as looks like there is a ping functionality that we can play with.
 
 
