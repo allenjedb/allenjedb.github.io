@@ -36,7 +36,7 @@ PORT   STATE SERVICE
 
 
 
-![](\assets\images\noname-pg\2022-07-27-15-23-21.png)
+![image](\assets\images\noname-pg\2022-07-27-15-23-21.png)
 
 - Checking burp request 
 
