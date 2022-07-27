@@ -108,11 +108,11 @@ Looks like it is not printing the whole `base64` encoded command. not sure why b
 ## Privesc
 
 
-- Now we have a shell as `www-data` first thing I check usually is the `SUIDs`. I noticed `/usr/bin/find` not sure if it is normal but I checked in [GTFObins](https://gtfobins.github.io/gtfobins/find/#suid) and looks like we can privesc using this command.
+Now we have a shell as `www-data` first thing I check usually is the `SUIDs`. I noticed `/usr/bin/find` not sure if it is normal but I checked in [GTFObins](https://gtfobins.github.io/gtfobins/find/#suid) and looks like we can privesc using this command.
 
 ![](\assets\images\noname-pg\2022-07-27-16-52-16.png)
 
-- Using the following command `find . -exec /bin/sh \; -quit` gave us root access to the box.
+Using the following command `find . -exec /bin/sh \; -quit` gave us root access to the box.
 
 ![](\assets\images\noname-pg\2022-07-27-16-54-22.png)
 
