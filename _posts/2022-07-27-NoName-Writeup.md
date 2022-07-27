@@ -45,7 +45,7 @@ Trying command injection with `sleep` command. I tried to chain using `;` and `&
 
 ![](\assets\images\noname-pg\2022-07-27-15-43-36.png)
 
-As we can see from the bottom of the screenshot we were able to successfully inject the `sleep` command resulting to a five second delay in the response. 
+As we can see at the bottom of the screenshot we were able to successfully inject the `sleep` command resulting to a five second delay in the response. 
 
 Now that we have confirmed the command injection vulnerability we can now try some basic [reverse shell payload](https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet). I tried the bash, nc, and python payloads but nothing worked. I also tried `ls`, `pwd`, and `cat /etc/passwd` but it also did not return anything, so I tried `cat superadmin.php` and the response returned the following:
 
