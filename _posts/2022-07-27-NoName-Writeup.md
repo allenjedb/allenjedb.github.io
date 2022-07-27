@@ -33,7 +33,9 @@ PORT   STATE SERVICE
     - `superadmin.php` looks more interesting as looks like there is a ping functionality that we can play with.
 
 
-![image](\assets\images\noname-pg\2022-07-27-15-23-21.png)
+![admin](\assets\images\noname-pg\2022-07-27-15-23-21.png)
+
+![superadmin](\assets\images\noname-pg\2022-07-27-15-41-18.png)
 
 - Intercepting the request with burp we can see two parameters `pinger` and `submitt`. `pinger` looks really interesting and is screaming command injection :p
 
