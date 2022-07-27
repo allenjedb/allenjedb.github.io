@@ -28,7 +28,9 @@ PORT   STATE SERVICE
 
 ## Port 80 Enumeration
 
-I started with my usual enumeration of http with Nikto and Gobuster. Nikto did not return anthing interesting while Gobuster returned `admin` and `superadmin.php`. Checking the`admin` endpoint only shows pictures posted with no additional functionality, the `superadmin.php` looks more interesting as looks like there is a ping functionality that we can play with.
+I started with my usual enumeration of http with Nikto and Gobuster. Nikto did not return anthing interesting while Gobuster returned `admin` and `superadmin.php`.
+
+Checking the`admin` endpoint only shows pictures posted with no additional functionality, the `superadmin.php` looks more interesting as looks like there is a ping functionality that we can play with.
 
 
 ![admin](\assets\images\noname-pg\2022-07-27-15-23-21.png)
