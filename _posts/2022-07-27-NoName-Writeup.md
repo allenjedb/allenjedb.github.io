@@ -15,11 +15,6 @@ platform: offsecsil.png
 ---
 
 
-
-
-# Noname
-
-
 ## NMAP
 
 PORT   STATE SERVICE
@@ -57,7 +52,8 @@ PORT   STATE SERVICE
 <?php
    if (isset($_POST['submitt']))
 {
-   	$word=array(";","&&","/","bin","&"," &&","ls","nc","dir","pwd");
+   	$word=array(";","&&","/","bin","&"," &&","ls","nc",
+    "dir","pwd");
    	$pinged=$_POST['pinger'];
    	$newStr = str_replace($word, "", $pinged);
    	if(strcmp($pinged, $newStr) == 0)
